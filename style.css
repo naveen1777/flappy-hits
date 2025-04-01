@@ -1,0 +1,119 @@
+/* Google Fonts: Poppins (bold), Roboto (normal) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none !important;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 span {
+    color: #ffcc00; /* HITS gold/yellow */
+}
+
+.input-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+input {
+    padding: 12px 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+button {
+    background: #ffcc00; /* HITS gold */
+    color: #003366; /* HITS blue */
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #ffdd33;
+    transform: translateY(-2px);
+}
+
+.hint {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+#gameCanvas {
+    background: linear-gradient(to bottom, #87CEEB, #E0F7FA);
+    border: 3px solid #003366;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    touch-action: none;
+}
+
+#score-display {
+    background: rgba(0, 51, 102, 0.7);
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+#score-display p {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+#score-display span {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .input-box {
+        padding: 20px;
+        width: 80%;
+    }
+    
+    input, button {
+        width: 100%;
+    }
+}
