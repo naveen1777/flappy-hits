@@ -14,7 +14,7 @@ const highScoreDisplay = document.getElementById("high-score");
 canvas.width = 800;
 canvas.height = 600;
 let birdY = canvas.height / 2;
-let birdVelocity = 0;
+let birdVelocity = 0.5;
 const gravity = 0.5;
 const jumpForce = -10;
 let pipes = [];
@@ -57,7 +57,7 @@ function restartGame() {
 
 function resetGame() {
     birdY = canvas.height / 1.5;
-    birdVelocity = 0;
+    birdVelocity = 0.5;
     pipes = [];
     score = 0;
     gameOver = false;
@@ -130,7 +130,7 @@ function updatePipes() {
     // Pipe settings
     const pipeWidth = 60;
     const pipeGap = 250;
-    const pipeSpeed = 1.5;
+    const pipeSpeed = 2.5;
 
     // Generate pipes
     if (pipes.length === 0 || canvas.width - pipes[pipes.length - 1].x > 200) {
